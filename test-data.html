@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Data</title>
+</head>
+<body>
+
+<h2>Click button to add test data</h2>
+
+<button onclick="addData()">Add Sample Data</button>
+
+<script>
+function addData() {
+  let orders = [
+    { name: "Eshita", product: "Shoes", price: 999 },
+    { name: "Rahul", product: "Watch", price: 1999 }
+  ];
+
+  let customers = [
+    { name: "Eshita", email: "eshita@gmail.com", phone: "9876543210" },
+    { name: "rahul", email: "rahul@gmail.com", phone: "9123456780" }
+  ];
+
+  localStorage.setItem("orders", JSON.stringify(orders));
+  localStorage.setItem("customers", JSON.stringify(customers));
+
+  alert("Test Data Added ✅");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="body1">
+
+  <div class="navbar">
+    <h3>Admin Panel</h3>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div class="section">
+
+  <!-- ADD PRODUCT -->
+  <h2>Add Product</h2>
+  <input type="text" id="pname" placeholder="Product Name">
+  <input type="number" id="pprice" placeholder="Price">
+  <button onclick="addProduct()">Add Product</button>
+
+  <h2>Products</h2>
+  <div id="productList"></div>
+
+  <!-- VIEW ORDERS -->
+  <h2>Orders</h2>
+  <div id="orderList"></div>
+
+  <!-- VIEW CUSTOMERS -->
+  <h2>Customers</h2>
+  <div id="customerList"></div>
+
+  </div>
+</div> 
+
+<script src="dashboard.js"></script>
+</body>
+</html>
